@@ -9,32 +9,49 @@
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
-  
+
 </head>
 
 <body>
  <div class="login">
-	<h1>DUST PREDICTION</h1>
-
+	<h1>Dust Prediction</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
       <input type="text" name="MILL IN SERVICE" placeholder="MILL IN SERVICE" required="required" /><br>
-    	<input type="text" name="TOTAL AIR FLOW (TPH)" placeholder="TOTAL AIR FLOW (TPH)" required="required" /><br>
-      <input type="text" name="COAL FLOW (TPH)" placeholder="COAL FLOW (TPH)" required="required" /><br>
-      <input type="text" name="SO2" placeholder="SO2" required="required" /><br>
-      <input type="text" name="NOX" placeholder="NOX" required="required" /><br>
-      <input type="text" name="CHIMNEY_O2" placeholder="CHIMNEY_O2" required="required" /><br>
-      <input type="text" name="BURNER_TILT" placeholder="BURNER_TILT" required="required" /><br>
-      <input type="text" name="FLUE_GAS_TEMP" placeholder="FLUE_GAS_TEMP" required="required" /><br>
-       
+    	  <input type="text" name="TOTAL AIR FLOW (TPH)" placeholder="TOTAL AIR FLOW (TPH)" required="required" /><br>
+        <input type="text" name="COAL FLOW (TPH)" placeholder="COAL FLOW (TPH)" required="required" /><br>
+        <input type="text" name="SO2" placeholder="SO2" required="required" /><br>
+        <input type="text" name="NOX" placeholder="NOX" required="required" /><br>
+        <input type="text" name="CHIMNEY_O2" placeholder="CHIMNEY_O2" required="required" /><br>
+        <input type="text" name="BURNER_TILT" placeholder="BURNER_TILT" required="required" /><br>
+        <input type="text" name="FLUE_GAS_TEMP" placeholder="FLUE_GAS_TEMP" required="required" /><br>
+
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
+<body>
+ <div class="login">
+	<h1>Dust Prediction</h1>
 
+     <!-- Main Input For Receiving Query to our ML -->
+     <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="MILL IN SERVICE" placeholder="MILL IN SERVICE" required="required" /><br>
+    	  <input type="text" name="TOTAL AIR FLOW (TPH)" placeholder="TOTAL AIR FLOW (TPH)" required="required" /><br>
+        <input type="text" name="COAL FLOW (TPH)" placeholder="COAL FLOW (TPH)" required="required" /><br>
+        <input type="text" name="SO2" placeholder="SO2" required="required" /><br>
+        <input type="text" name="NOX" placeholder="NOX" required="required" /><br>
+        <input type="text" name="CHIMNEY_O2" placeholder="CHIMNEY_O2" required="required" /><br>
+        <input type="text" name="BURNER_TILT" placeholder="BURNER_TILT" required="required" /><br>
+        <input type="text" name="FLUE_GAS_TEMP" placeholder="FLUE_GAS_TEMP" required="required" /><br>
+
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
    <br>
    <br>
-  
+
 
  </div>
  {{prediction_text}}

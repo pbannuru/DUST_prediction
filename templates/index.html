@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dust Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/material-icon/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='vendor/jquery-ui/jquery-ui.min.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css')}}">
+</head>
+<body>
+
+    <div class="main">
+        
+        <div class="header">
+            <img src="{{ url_for('static', filename = 'images/header-text.png')}}" alt="">
+            <h1>DUST PREDICTION</h1>
+            <img src="{{ url_for('static', filename = 'images/dots.png')}}" alt="">
+        </div>
+        <h2>Project by Pavan Kumar Bannuru
+        	
+        </h2>
+        
+        <div class="container">
+            <h3>Dust Prediction (DIL) </h3>
+            <form action="{{ url_for('predict')}}" id="Reg_form" class="booking-form" method="POST">
+                <div class="form-group">
+                    <div>
+                        <label for="MILL_IN_SERVICE">MILLS</label>
+                        <input type="text" id="MILL_IN_SERVICE1" name="MILL_IN_SERVICE" placeholder="MILL" />
+                    </div>
+                    <div>
+                        <label for="TOTAL_AIR_FLOW">AIR_FLOW</label>
+                        <input type="text" id="TOTAL_AIR_FLOW" name="TOTAL_AIR_FLOW" placeholder="AIR" />
+                    </div>
+                    <div>
+                        <label for="COAL_FLOW">COAL_F</label>
+                        <input type="text" id="COAL_FLOW" name="COAL_FLOW" placeholder="COAL" />
+                    </div>
+                    <div>
+                        <label for="SO2">SO2</label>
+                        <input type="text" id="SO2" name="SO2" placeholder="SO2" />
+                    </div>
+                    <div>
+                        <label for="NOX">NOX</label>
+                        <input type="text" id="NOX" name="NOX" placeholder="NOX" />
+                    </div>
+                    <div>
+                        <label for="CHIMNEY_O2">CHIMNEY_O2</label>
+                        <input type="text" id="CHIMNEY_O2" name="CHIMNEY_O2" placeholder="CHIMNEY_O2" />
+                    </div>
+                    <div>
+                        <label for="BURNER_TILT">BURNER_TILT</label>
+                        <input type="text" id="BURNER_TILT" name="BURNER_TILT" placeholder="BURNER_TILT" />
+                    </div>
+                    <div>
+                        <label for="FLUE_GAS_TEMP^">F_G_TEMP^</label>
+                        <input type="text" id="FLUE_GAS_TEMP^" name="FLUE_GAS_TEMP^" placeholder="FLUE_GAS_TEMP^" />
+                    </div>
+                    <div class="form-submit">
+                        <input type="submit" id="submitR" class="submit" value="Predict" />
+                    </div>
+
+
+
+                </div>
+                          {{prediction_text2}}
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
