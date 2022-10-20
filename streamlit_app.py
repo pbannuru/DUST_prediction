@@ -5,7 +5,7 @@ import streamlit as st
 from PIL import Image
 
 # loading in the model to predict on the data
-pickle_in = open('dust_prediction.pkl', 'rb')
+pickle_in = open('dust_prediction_rfr.pkl', 'rb')
 regressor = pickle.load(pickle_in)
   
 def welcome():
