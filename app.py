@@ -24,7 +24,7 @@ def predict():
        
         output = model.predict(data)[0]
         log.info('Prediction done for Regression model')
-        if output > 15:
+        if output > 50:
             return render_template('index.html', prediction_text2="Value of Dust is {:.4f} ---- Warning!!! High hazard rating".format(output))
         else:
             return render_template('index.html', prediction_text2="Fuel Moisture Code index is {:.4f} ---- Safe.. Low hazard rating".format(output))
