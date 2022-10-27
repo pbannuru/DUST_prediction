@@ -51,12 +51,10 @@
 
 <!-- CONTACT -->
 ## Contact
-[![Pavan kumar | LinkedIn](https://img.shields.io/badge/Pavan kumar-eeeeee?style=for-the-badge&logo=linkedin&logoColor=ffffff&labelColor=0A66C2)][reach_linkedin]
 [![Pavan kumar| G Mail](https://img.shields.io/badge/pbannuru-eeeeee?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=EA4335)][reach_gmail]
 [![Pavan kumar | GitHub](https://img.shields.io/badge/pbannuru-eeeeee?style=for-the-badge&logo=microsoft-outlook&logoColor=ffffff&labelColor=blue)][reach_outlook]
 
 <!--contact-->
-[reach_linkedin]: https://www.linkedin.com/in/pavan-kumar-a58988a9/
 [reach_gmail]: mailto:pbannuru@gmail.com?subject=Github
 
 
