@@ -19,6 +19,13 @@
   </p>
 </div>
 
+<!-- ABOUT THE PROJECT -->
+## About The Project
+* Using Data Science and Machine learning, we can build a model that helps to create simulator for Dust prediction inturn helps to maintain emissions under govt norms.
+* Building a **Flask App** hosted on **Heroku**.
+* "streamlit" as an alternate to Flask to demostrate
+* **Sklearn** for pre-processing and Model Building
+* Pandas, Numpy, Matplotlib for csv reading, Data Processing, Data Cleaning, Visualization etc.
 
 
 # Heroku app link: 
